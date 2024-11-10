@@ -435,6 +435,7 @@ mapAliases {
   gmtk = throw "'gmtk' has been removed due to lack of maintenance upstream"; # Added 2024-09-14
   gmtp = throw "'gmtp' has been removed due to lack of maintenance upstream. Consider using 'gnome-music' instead"; # Added 2024-09-14
   gnome-latex = throw "'gnome-latex' has been superseded by 'enter-tex'"; # Added 2024-09-18
+  gnome-settings-daemon43 = throw "'gnome-settings-daemon43' has been removed since it is no longer used by Pantheon."; # Added 2024-09-22
   gnu-cobol = gnucobol; # Added 2024-09-17
   gogs = throw ''
     Gogs development has stalled. Also, it has several unpatched, critical vulnerabilities that
