@@ -132,7 +132,6 @@ in
       hardware.bluetooth.enable = mkDefault true;
       security.polkit.enable = true;
       services.accounts-daemon.enable = true;
-      services.bamf.enable = true;
       services.colord.enable = mkDefault true;
       services.fwupd.enable = mkDefault true;
       # TODO: Enable once #177946 is resolved
@@ -154,8 +153,6 @@ in
       services.gnome.gnome-keyring.enable = true;
       services.gvfs.enable = true;
       services.gnome.rygel.enable = mkDefault true;
-      services.gsignond.enable = mkDefault true;
-      services.gsignond.plugins = with pkgs.gsignondPlugins; [ lastfm mail oauth ];
       services.udisks2.enable = true;
       services.upower.enable = config.powerManagement.enable;
       services.libinput.enable = mkDefault true;
@@ -234,7 +231,7 @@ in
       ])) config.environment.pantheon.excludePackages;
 
       # Settings from elementary-default-settings
-      environment.etc."gtk-3.0/settings.ini".source = "${pkgs.pantheon.elementary-default-settings}/etc/gtk-3.0/settings.ini";
+      environment.etc."gtk-4.0/settings.ini".source = "${pkgs.pantheon.elementary-default-settings}/etc/gtk-4.0/settings.ini";
 
       xdg.mime.enable = true;
       xdg.icons.enable = true;
