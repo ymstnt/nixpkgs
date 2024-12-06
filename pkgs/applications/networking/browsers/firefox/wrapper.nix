@@ -324,6 +324,7 @@ let
             --set MOZ_SYSTEM_DIR "$out/lib/mozilla" \
             --set MOZ_LEGACY_PROFILES 1 \
             --set MOZ_ALLOW_DOWNGRADE 1 \
+            --add-flags "--name ${wmClass}" \
             --prefix XDG_DATA_DIRS : "$GSETTINGS_SCHEMAS_PATH" \
             --suffix XDG_DATA_DIRS : '${adwaita-icon-theme}/share' \
             --set-default MOZ_ENABLE_WAYLAND 1 \
